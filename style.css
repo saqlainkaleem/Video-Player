@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+body {
+  margin: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
+	background-size: 400% 400%;
+	-webkit-animation: gradientBG 10s ease infinite;
+	        animation: gradientBG 10s ease infinite;
+  }
+
+  .body{
+    width: 100%;
+	position: absolute;
+	top: 35%;
+	text-align: center;
+  }
+  
+  .Header{
+      color: white;
+      padding-left: 2rem;
+      font-family: 'Sofia', cursive;
+      text-align: center;
+      padding: 1rem 1rem;
+      /* text-shadow: 2px 2px 5px red; */
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+  
+  .container{
+    margin: auto;
+    padding: 2rem;
+  }
+  .video-box video{
+    margin: 1rem;
+    max-width: 100%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  }
+
+  .last-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* /* margin: auto; */
+    padding-bottom: 1rem;
+  }
+
+  .last-video iframe{
+    max-width: 100%;
+  }
+  
+  .footer{
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-family: 'Sofia', cursive;
+  }
+
+  .footer a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .footer a:hover{
+    color: aquamarine;
+  }
+
+  .github-link{
+    font-family: 'Sofia', cursive;
+    float: right;
+    background-color: black;
+    border-radius: 1rem;
+  }
+
+  @-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@-webkit-keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
